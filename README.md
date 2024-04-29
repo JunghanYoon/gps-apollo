@@ -1,8 +1,8 @@
 # gPS Apollo
 
-*Real-time value based bidding with Google Ads products, that keeps sensitive data 
-in the private spreadsheet and encrypted HTTP request in the browser.
-.*
+*Get data from a Google Sheet in realtime to generate lead gen value
+for lead scoring. This value will be activated via VBB (value based bidding) to
+optimize Google Ads campaign performance*
 
 Use
 [Server Side Tag Manager](https://developers.google.com/tag-platform/tag-manager/server-side)
@@ -39,7 +39,8 @@ the less impact it would have on bidding.
 So our solutions improve or enhance the current standard of workflow, 
 if you look at the third step, we have two options.
 
-The first option is gPS-Apollo solution, which you're reading now.
+The first option is gPS-Apollo solution,[gPS-Apollo solution](https://github.com/google-marketing-solutions/gps-sgtm-pantheon/tree/main/sgtm/apollo). 
+which you're reading now.
 
 It is using a spreadsheet to pass the conversion value, 
 think of the spreadsheet as a lookup table based on the user’s input in the form. 
