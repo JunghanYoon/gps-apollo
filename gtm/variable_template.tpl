@@ -56,9 +56,9 @@ const JSON = require("JSON");
 
 const logToConsole = require("logToConsole");
 
-logToConsole(data.age);
-logToConsole(data.address);
-logToConsole(data.job);
+logToConsole('age :' + data.age);
+logToConsole('address :' + data.address);
+logToConsole('job :' + data.job);
 
 const SPREADSHEET_ID = data.spreadsheet_id;
 const SHEET_NAME = data.job;
@@ -67,7 +67,7 @@ const ROW_NO = data.age;
 const TARGET = '!' + COLUMN_NO + ROW_NO + ':' + COLUMN_NO + ROW_NO;
 
 const url = 'https://sheets.googleapis.com/v4/spreadsheets/' + SPREADSHEET_ID + '/values/' + SHEET_NAME + TARGET;
-logToConsole(url);
+logToConsole('url :' + url);
 
 
 // Get Google credentials from the service account running the container.
@@ -89,11 +89,10 @@ return sendHttpRequest(url, requestOptions).then((result) => {
   setResponseBody(result.body);
   setResponseHeader('cache-control', result.headers['cache-control']);
   const result_object = JSON.parse(result.body);
-  const vbb = result_object.values[0][0];
-  logToConsole(vbb);
+  const return_value = result_object.values[0][0];
+  logToConsole('return_value :' + return_value);
   
-  
-  return vbb;
+  return return_value;
 });
 
 
@@ -253,6 +252,6 @@ scenarios:
 
 ___NOTES___
 
-Created on 4/26/2024, 2:25:13 PM
+Created on 4/29/2024, 2:56:48 PM
 
 
