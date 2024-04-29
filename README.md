@@ -39,7 +39,7 @@ the less impact it would have on bidding.
 So our solutions improve or enhance the current standard of workflow, 
 if you look at the third step, we have two options.
 
-The first option is gPS-Apollo solution,[gPS-Apollo solution](https://github.com/google-marketing-solutions/gps-sgtm-pantheon/tree/main/sgtm/apollo). 
+The first option is gPS-Apollo solution, [gPS-Apollo solution](https://github.com/JunghanYoon/gps-apollo). 
 which you're reading now.
 
 It is using a spreadsheet to pass the conversion value, 
